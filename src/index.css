@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+.font-cormorant {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-bg-primary: var(--bg-primary);
+  --color-text-primary: var(--text-primary);
+  --color-bg-inverse: var(--bg-inverse);
+  --color-text-inverse: var(--text-inverse);
+  --color-border-subtle: var(--border-subtle);
+}
+
+:root {
+  --bg-primary: #FFFFFF;
+  --text-primary: #0C0C0C;
+  --bg-inverse: #0C0C0C;
+  --text-inverse: #D7E2EA;
+  --border-subtle: rgba(12, 12, 12, 0.1);
+  --hero-gradient-1: #111111;
+  --hero-gradient-2: #888888;
+}
+
+:root.dark {
+  --bg-primary: #0C0C0C;
+  --text-primary: #D7E2EA;
+  --bg-inverse: #FFFFFF;
+  --text-inverse: #0C0C0C;
+  --border-subtle: rgba(215, 226, 234, 0.1);
+  --hero-gradient-1: #646973;
+  --hero-gradient-2: #BBCCD7;
+}
+
+html, body, #root {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  scroll-behavior: smooth;
+}
+
+@media (pointer: fine) {
+  html, body, #root {
+    cursor: none;
+  }
+  
+  a, button, [role="button"], input, textarea {
+    cursor: none !important;
+  }
+}
+
+.hero-heading {
+  background: linear-gradient(180deg, var(--hero-gradient-1) 0%, var(--hero-gradient-2) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
