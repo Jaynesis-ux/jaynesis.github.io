@@ -1,20 +1,20 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Jaynesis
 
-# Run and deploy your AI Studio app
+Building ideas. Studying people. Pursuing mastery.
 
-This contains everything you need to run your app locally.
+Jaynesis is the personal website and digital archive of Ebenezer Emmanuel—a space dedicated to exploring leadership, entrepreneurship, philosophy, psychology, technology, and human potential.
 
-View your app in AI Studio: https://ai.studio/apps/bdf942b2-6550-4673-8df3-0d34bd9ad602
+This is where research meets reflection, and ambition meets meaning.
 
-## Run Locally
+## Core Themes
 
-**Prerequisites:**  Node.js
+- Leadership
+- Business Strategy
+- Entrepreneurship
+- Philosophy
+- Psychology
+- Personal Growth
+- Human Potential
+- Research & Academic Work
 
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+> "The person you become is your greatest creation."
